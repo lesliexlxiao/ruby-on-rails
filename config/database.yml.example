@@ -9,3 +9,11 @@ default: &default
 development:
   <<: *default
   database: ruby_on_rails_development
+
+test:
+  <<: *default
+  database: ruby_on_rails_test
+
+production:
+  <<: *default
+  database: ruby_on_rails_production

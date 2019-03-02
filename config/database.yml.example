@@ -1,0 +1,11 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  collation: utf8_unicode_ci
+  host: localhost
+  username: root
+  password: root
+
+development:
+  <<: *default
+  database: ruby_on_rails_development
